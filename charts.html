@@ -1,0 +1,194 @@
+<html>
+	<head>
+        <title>Category</title>
+		
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+    </head>
+	<body>
+	<div class="header">
+		<nav class="navbar navbar-expand-lg navbar-light">
+					<img src="assets/images/Logo.png" width="10%"><span class="sr-only">(current)</span></a>
+					
+					<ul class="navbar-nav mr-auto">
+					
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Live Exams </a>
+                        </li>
+						<li class="nav-item active">
+                          <a class="nav-link" href="#">Practice</a>
+                        </li>
+						
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mock Tests
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Arithmetic</a>
+                            <a class="dropdown-item" href="#">Reasoning</a>
+							<a class="dropdown-item" href="#">Verbal</a>
+							<a class="dropdown-item" href="#">Programming</a>							
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Test Series</a>
+                        </li>
+						<li class="nav-item active">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+						<li class="nav-item active">
+                          <a class="nav-link" href="#">Discussion</a>
+                        </li>
+						
+                    </div>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+					  <div class="sign-in">
+						<a href="#" role="button">Signin</a>							
+					  </div>
+                      </form>
+                  </nav>
+	</div>
+	<div class="grad">
+		<div class="container">
+            <div class="jumbotron">
+				<div class="row align-items-center">
+				    <div class="col-md-6">
+                                <div style="height: 400px; width: 600px;">
+                                    <canvas id="myChart1" height="100" width="200">
+                                    </canvas>
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div style="height: 400px; width: 600px;">
+                                <canvas id="myPie" height="100" width="200">
+                                </canvas>
+                            </div>
+                            </div>
+                        </div>
+                  
+			</div>
+			</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var c = document.getElementById('myPie').getContext('2d');
+        var myPie = new Chart(c,{
+            type:'doughnut',
+            data:{
+                labels:['Arithmetic','Reasoning','English'],
+                datasets:[{
+                    data:[70, 25, 5],
+                    backgroundColor:[
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)'
+                    ]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Average Time For Section'
+                }
+            }
+
+        });
+    </script>
+    <script>
+        var ctx = document.getElementById('myChart1').getContext('2d');
+        var myChart1 = new Chart(ctx,{
+            type:'bar',
+            data:{
+                labels:['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'],
+                datasets:[{
+                    label:'Attempts',
+                    data: [50, 0, 80, 70, 100,20,60,40,50,30,80,10],
+                    backgroundColor:[
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)'
+                    ]
+
+                },
+                {
+                    label: 'Average Time',
+                    data: [30, 0, 70, 50, 60,10,40,30,20,10,60,10],
+                    type: 'line',
+                    fill: false,
+                    borderColor:[
+                            'rgba(255, 99, 132, 1)'
+                    
+                    ]
+
+                }]
+                
+
+                },
+                options: {
+                title: {
+                    display: true,
+                    text: 'Time Taken For Question'
+                },
+				scales: {
+        xAxes: [{
+            gridLines: {
+                display:false
+            }
+        }],
+        yAxes: [{
+            gridLines: {
+                display:false
+            }   
+        }]
+    }		
+            }
+                
+            });
+
+    </script>
+	
+	
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    
+        </script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+	</body>
+</html>

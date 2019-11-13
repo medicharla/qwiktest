@@ -1,0 +1,275 @@
+body{
+	font-family: 'Cabin', sans-serif;
+}
+.h-15{
+	/*height:5% !important;*/
+	text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.l1{
+	text-align:center;
+	padding: 2px 0px 2px 0px;
+	padding-bottom: 2px;
+}
+.navbar-nav.mr-auto {
+    padding-left: 30px;
+    
+}
+.nav-item.active {
+    font-size: 13px;
+	padding:5px 0px 0px 15px;
+    padding-top: 5px;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem!important;
+}
+.pr-3, .px-3 {
+    padding-right: 1rem!important;
+}
+.pr-5, .px-5 {
+    padding-right: 2rem!important;
+    padding-left: 2rem!important;
+}
+.p1{
+	color:#25C16F;
+	font-size: 20px;
+}
+.navbar, .jumbotron{
+	background-color:transparent;
+}
+
+.grad {
+	background-image: linear-gradient(rgba(37, 193, 111, 0.2), #FFFFFF);
+}
+.feather {
+  width: 65px;
+  height: 65px;
+  stroke: #25C16F;
+  stroke-width: 0.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.live{
+	color:#FFFFFF;
+	background-color:#174C43;
+	border-radius: 10px 0 0 10px;
+	font-size: 10px;
+	padding: 4px 15px 4px 15px;
+}
+
+.text{
+	text-align:center;
+	padding: 0px 25px 0px 25px;
+    font-size: 13px;
+}
+.time{
+	
+	color:black;
+	background-color:rgba(37, 193, 111, 0.2);
+	border-radius: 0 10px 10px 0;
+	font-size: 10px;
+	padding: 4px 15px 4px 15px;
+}
+
+.exam{
+	background-color: #25C16F;
+    font-size: 10px;
+    padding: 4px 30px 4px 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+.start{
+	background-color: #25C16F;
+    font-size: 10px;
+    padding: 4px 30px 4px 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+.t1{
+	text-align: center;
+    font-size: 40px;
+    padding: 45px 0px 10px 0px;
+}
+
+.t2{
+	text-align: center;
+    font-size: 15px;
+	padding-bottom: 25px;
+}
+a:link,a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#static{
+	padding: 0px 45px 0px 150px;
+}
+
+#taken{
+	
+	float:right;
+    padding: 8px 65px 0px 0px;
+}
+
+#taken1{
+	
+	float:right;
+	padding:8px 100px 0px 0px;
+}
+#taken2{
+	float:right;
+	padding:8px 40px 0px 0px;
+}
+
+.box{
+	background-color:rgba(37, 193, 111, 0.2);
+	height: 100px;
+	
+}
+#static1{
+	padding:0px 0px 50px 18px;
+}
+.row.r1{
+	padding-top:15px;
+}
+.card.c1{
+	width: 100%;
+    height: 100%;
+}
+.col-sm-6.c1 {
+    padding-right: 3px;
+}
+#static2{
+   background-color: rgba(211, 243, 226, 0.5);
+}
+.t3{
+	text-align: center;
+    font-size: 35px;
+	padding:35px 0px 35px 0px;
+}
+.card.c2{
+	width: 13rem;
+	border-color: #25C16F;
+	border-radius: 10px;
+}
+.ilets {
+	padding:0px 80px 70px 80px;
+}
+.card.c3{
+	width: 13rem;
+	height: 15rem;
+	border-color: #25C16F;
+	border-radius: 10px;
+}
+
+.test {
+    background-color: #25C16F;
+    font-size: 10px;
+	padding:4px 65px 4px 69px;
+    border-radius: 3px 3px 3px 3px;
+}
+.cb {
+    font-size: 12px;
+	padding-bottom: 10px;
+}
+}
+.t4{
+	text-align: center;
+    font-size: 30px;
+	padding:35px 0px 30px 0px;
+}
+.exams {
+	padding:0px 80px 70px 80px;
+}
+.grad1 {
+	background-image: linear-gradient(#FFFFFF, rgba(37, 193, 111, 0.2));
+    padding-bottom: 20px;
+}
+.t5{
+	font-size: 30px;
+	padding:35px 20px 30px 75px;
+}
+
+.search {
+	padding:40px 144px 15px 10px;
+}
+.nl {
+    padding-left: 11px;
+    padding-top: 10px;
+}
+.signup {
+    background-color: #25C16F;
+    font-size: 10px;
+	padding: 7px 25px 7px 25px;
+    border-radius: 3px 3px 3px 3px;
+}
+.footer {
+    background-color: #174c43;
+    color: #FFFFFF;
+    font-size: 15px;
+	padding:90px 10px 100px 10px;
+}
+.img {
+    width: 275px;
+    padding-bottom: 20px;
+}
+.abstruct {
+    padding-right: 130px;
+    padding-left: 5px;
+}
+.about {
+    text-decoration-line: underline;
+    padding-bottom: 25px;
+}
+
+/* Category*/
+
+.card-text {
+   
+    padding-bottom: 40px;
+    padding-left: 15px;
+}
+
+/* Instructions */
+
+.h-16{
+  height: 12% !important;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background-color: darkblue;
+}
+.h-10{
+  padding-left: 15px;
+    font-size: 25px;
+    background-color: #87cefa7a;
+}
+.s1{
+  float: right; 
+  padding: 2px;
+}
+.heading {
+    font-size: 20px;
+    padding: 20px 10px 50px 0px;
+    text-decoration-line: underline;
+}
+.col-md-9.border-right{
+    border-right: 1px solid black!important;
+    position: absolute;
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+}
+.not-visited {
+    /* color: #FFFFFF; */
+    background-color: gainsboro;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid #00000040;
+}
+.not-answered {
+    padding: 5px 15px 5px 5px;
+    background-color: red;
+    border: 1px solid #00000038;
+    border-radius: 5px 5px 5px 5px;
+    /* border-block-end: 10px; */
+}

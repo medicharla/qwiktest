@@ -1,0 +1,65 @@
+body{
+	font-family: 'Cabin', sans-serif;
+}
+.grad {
+	background-image: linear-gradient(rgba(37, 193, 111, 0.2), #FFFFFF);
+}
+.navbar-nav.mr-auto {
+    padding-left: 30px;
+    
+}
+.nav-item.active {
+    font-size: 13px;
+	padding:5px 0px 0px 15px;
+    padding-top: 5px;
+}
+.sign-in{
+	background-color: #25C16F;
+    font-size: 10px;
+    padding: 4px 30px 4px 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+.navbar, .jumbotron{
+	background-color:transparent;
+}
+.t3{
+	text-align: center;
+    font-size: 40px;
+    padding: 10px 0px 40px 0px;
+}
+.exams {
+    padding: 0px 80px 46px 80px;
+}
+
+
+.card-text {
+   
+    padding-bottom: 40px;
+    padding-left: 15px;
+}
+.cb {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.test {
+    background-color: #25C16F;
+    font-size: 10px;
+    padding: 4px 65px 4px 69px;
+    border-radius: 3px 3px 3px 3px;
+}
+a:link, a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.browse-tests {
+    background-color: #25C16F;
+    font-size: 10px;
+    padding: 4px 30px 4px 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+.col-md-3.c1 {
+    padding-top: 16px;
+}
+.card.exam {
+    position: sticky;
+}

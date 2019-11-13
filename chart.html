@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title>Chart</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+	<body>
+
+		<div class="row">
+			<div class="col">
+				<div style="height: 400px; width: 600px;">
+				<canvas id="myChart" height="100" width="200">
+				</canvas>
+			</div>
+			</div>
+			<div class="col">
+				<div style="height: 400px; width: 600px;">
+				<canvas id="myPie" height="100" width="200">
+				</canvas>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div style="height: 400px; width: 600px;">
+				<canvas id="myChart1" height="100" width="200">
+				</canvas>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+		<script>
+			var ctx = document.getElementById('myChart').getContext('2d');
+			var myChart = new Chart(ctx,{
+				type:'bar',
+				data:{
+					labels:['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'],
+					datasets:[{
+						label:'Monthly Sales',
+						data: [50, 0, 80, 70, 100,20,60,40,50,30,80,10],
+						backgroundColor:[
+								'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)',
+                				'rgba(255, 206, 86, 0.2)',
+                				'rgba(75, 192, 192, 0.2)',
+                				'rgba(153, 102, 255, 0.2)',
+                				'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)',
+                				'rgba(255, 206, 86, 0.2)',
+                				'rgba(75, 192, 192, 0.2)',
+                				'rgba(153, 102, 255, 0.2)',
+                				'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)'
+						],
+						borderColor: [
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)',
+                				'rgba(255, 206, 86, 1)',
+                				'rgba(75, 192, 192, 1)',
+                				'rgba(153, 102, 255, 1)',
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)',
+                				'rgba(255, 206, 86, 1)',
+                				'rgba(75, 192, 192, 1)',
+                				'rgba(153, 102, 255, 1)',
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)'
+                		]
+
+					}]
+					
+
+					},
+					options: {
+					title: {
+			            display: true,
+			            text: 'Time Taken For Question'
+			        }
+				}
+					
+				});
+
+		</script>
+		<script>
+			var c = document.getElementById('myPie').getContext('2d');
+			var myPie = new Chart(c,{
+				type:'doughnut',
+				data:{
+					labels:['Arithmetic','Reasoning','English'],
+					datasets:[{
+						data:[70, 25, 5],
+						backgroundColor:[
+								'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)',
+                				'rgba(255, 206, 86, 1)'
+						]
+					}]
+				},
+				options: {
+					title: {
+			            display: true,
+			            text: 'Average Time For Section'
+			        }
+				}
+
+			});
+		</script>
+		<script>
+			var ctx = document.getElementById('myChart1').getContext('2d');
+			var myChart1 = new Chart(ctx,{
+				type:'bar',
+				data:{
+					labels:['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'],
+					datasets:[{
+						label:'Attempts',
+						data: [50, 0, 80, 70, 100,20,60,40,50,30,80,10],
+						backgroundColor:[
+								'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)',
+                				'rgba(255, 206, 86, 0.2)',
+                				'rgba(75, 192, 192, 0.2)',
+                				'rgba(153, 102, 255, 0.2)',
+                				'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)',
+                				'rgba(255, 206, 86, 0.2)',
+                				'rgba(75, 192, 192, 0.2)',
+                				'rgba(153, 102, 255, 0.2)',
+                				'rgba(255, 99, 132, 0.2)',
+                				'rgba(54, 162, 235, 0.2)'
+						],
+						borderColor: [
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)',
+                				'rgba(255, 206, 86, 1)',
+                				'rgba(75, 192, 192, 1)',
+                				'rgba(153, 102, 255, 1)',
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)',
+                				'rgba(255, 206, 86, 1)',
+                				'rgba(75, 192, 192, 1)',
+                				'rgba(153, 102, 255, 1)',
+                				'rgba(255, 99, 132, 1)',
+                				'rgba(54, 162, 235, 1)'
+                		]
+
+					},
+					{
+            			label: 'Average Time',
+            			data: [30, 0, 70, 50, 60,10,40,30,20,10,60,10],
+						type: 'line',
+						fill: false,
+						borderColor:[
+								'rgba(255, 99, 132, 1)'
+                				
+						]
+
+        			}]
+					
+
+					},
+					options: {
+					title: {
+			            display: true,
+			            text: 'Time Taken For Question'
+			        }
+				}
+					
+				});
+
+		</script>
+	</body>
+
+</html>
